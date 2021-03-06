@@ -16,7 +16,7 @@ function startTimer (socket) {
   const startTime = Date.now()
   socket.join(roomId)
   const intervalId = setInterval(() => {
-    io.to(roomId).emit('timer', {timer: Date.now() - startTime, timerId: roomId})
+    io.to(roomId).emit('timer', { timer: Date.now() - startTime, timerId: roomId })
   }, 100)
   socket.intervalId = intervalId
 }
@@ -47,7 +47,7 @@ io.on('connection', (socket) => {
     if (timerId) {
       socket.leave(timerId)
     } else {
-      for (let room in socket.rooms.filter(room => room !== socket.id)) {
+      for (const room in socket.rooms.filter(room => room !== socket.id)) {
         socket.leave(room)
       }
     }
