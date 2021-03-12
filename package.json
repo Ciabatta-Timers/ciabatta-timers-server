@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "standard",
+    "lint": "standard",
+    "test": "",
     "start": "node index.js"
   },
   "author": "Kasper Lind Sørensen",
