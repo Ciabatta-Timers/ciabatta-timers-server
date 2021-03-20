@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Ciabatta-Timers/ciabatta-timers-server.svg?branch=main)](https://travis-ci.org/Ciabatta-Timers/ciabatta-timers-server)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 # Ciabatta Timers Server
