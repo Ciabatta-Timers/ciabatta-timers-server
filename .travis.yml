@@ -11,3 +11,9 @@ node_js:
 script:
 - npm run lint
 - npm test
+
+deploy:
+  provider: script
+  script: bash scripts/deploy-to-prod.sh
+  on:
+    branch: main
